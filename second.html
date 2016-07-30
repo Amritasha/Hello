@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hey</title>
+	<style type="text/css">
+		#hello{
+			background-color: red;
+			height: 100px;
+			width: 100px;
+		}
+		#hey{
+			height: 50px;
+			width: 50px;
+			background-color: yellow ;
+		}
+
+	</style>
+	<script type="text/javascript">
+		function change(elem){
+			if(elem.id == "hello")
+			elem.setAttribute("id","hey");
+		else
+			elem.setAttribute("id","hello");
+		}
+	</script>
+</head>
+<body>
+<div id="hello" onclick="change(this)">
+	hello
+</div>
+<div id="hey" onclick="change(this)">
+	hey
+</div>
+</body>
+</html>

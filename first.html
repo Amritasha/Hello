@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Getting the colour of div</title>
+</head>
+<style type="text/css">
+	#hel{
+		height: 100px;
+		width: 100px;
+		
+	}
+</style>
+<script type="text/javascript">
+	function getcol(elem){
+		
+		//alert(elem.style.backgroundColor);
+		if(elem.style.backgroundColor == 'rgb(255,0,0)')
+			alert("yes");
+		else
+			alert("no");
+	}
+	function colorchange(){
+		document.getElementById("hel").style.backgroundColor = "#6699ff" ;
+	}
+</script>
+<body>
+<div id="hel" onclick="getcol(this)" style="background-color: #ff0000">
+	right
+</div>
+<button onclick="colorchange()">
+	Click me
+</button>
+</body>
+</html>
